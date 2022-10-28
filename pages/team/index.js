@@ -15,7 +15,7 @@ export default function Team() {
           coachies.map((coachie) => (
             <li key={coachie.name}>
               {" "}
-              <Link href={"/team/" + coachie.name}>{coachie.name}</Link>
+              <Link href={"/team/" + coachie.name.toLowerCase()}>{coachie.name}</Link>
             </li>
           ))
         ) : (

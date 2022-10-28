@@ -18,7 +18,7 @@ function getAllTeamMembers() {
 }
 
 function getTeamMemberByName(name) {
-  return coachies.find((coachie) => coachie.name === name);
+  return coachies.find((coachie) => coachie.name.toLowerCase() === name);
 }
 
 function fetcher(url) {
